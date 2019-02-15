@@ -1,0 +1,193 @@
+2019-01-05 18:27:48 ERROR DB:35 - Database Connection Failed! Message: com.mysql.cj.jdbc.Driver
+2019-01-05 18:29:05 ERROR DB:35 - Database Connection Failed! Message: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2019-01-05 18:33:33 ERROR DB:35 - Database Connection Failed! Message: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2019-01-05 18:33:54 ERROR DB:35 - Database Connection Failed! Message: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2019-01-05 18:41:48 ERROR DB:38 - Database Connection Failed! Message: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2019-01-05 18:51:56 ERROR DB:39 - Database Connection Failed! Message: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2019-01-05 18:58:40 ERROR DB:48 - Database Connection Failed! Message: test.properties (The system cannot find the file specified)
+2019-01-05 19:02:36 ERROR DB:48 - Database Connection Failed! Message: credentials.properties (The system cannot find the file specified)
+2019-01-05 19:23:24 INFO  DB:41 - DbDetails jdbc:mysql://172.104.42,120:2083/playwinf_sportz11,playwinf_sportz,i{+W8e4&AfOs
+2019-01-05 19:24:18 INFO  DB:41 - DbDetails jdbc:mysql://172.104.42,120:208/playwinf_sportz11,playwinf_sportz,i{+W8e4&AfOs
+2019-01-05 19:25:30 INFO  DB:41 - DbDetails jdbc:mysql://172.104.42,120/playwinf_sportz11,playwinf_sportz,i{+W8e4&AfOs
+2019-01-05 19:26:09 INFO  DB:41 - DbDetails jdbc:mysql://172.104.42.120/playwinf_sportz11,playwinf_sportz,i{+W8e4&AfOs
+2019-01-05 19:26:18 INFO  DB:44 - Database Connection Established!
+2019-01-05 19:28:43 INFO  DB:41 - DbDetails jdbc:mysql://172.104.42.120/playwinf_sportz11,playwinf_sportz,i{+W8e4&AfOs
+2019-01-05 19:28:55 INFO  DB:44 - Database Connection Established!
+2019-01-05 19:29:37 INFO  DB:41 - DbDetails jdbc:mysql://172.104.42.120/playwinf_sportz11,playwinf_sportz,i{+W8e4&AfOs
+2019-01-05 19:29:45 INFO  DB:44 - Database Connection Established!
+2019-01-12 16:26:57 INFO  DB:41 - DbDetails jdbc:mysql://172.104.42.120/playwinf_sportz11,playwinf_sportz,i{+W8e4&AfOs
+2019-01-12 16:26:59 INFO  DB:44 - Database Connection Established!
+2019-01-12 16:29:06 INFO  DB:41 - DbDetails jdbc:mysql://172.104.42.120/playwinf_sportz11,playwinf_sportz,i{+W8e4&AfOs
+2019-01-12 16:29:07 INFO  DB:44 - Database Connection Established!
+2019-01-12 16:29:17 INFO  PlayWinUI:37 - Launching Application
+2019-01-12 16:29:51 ERROR PlayWinUI:48 - Exception Occured while launching application! Message: Expected condition failed: waiting for text ('home') to be present in element found by By.tagName: a (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'WOI-LT-171', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\SHVAIS~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49922}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 02a20fc2db87aea5b2f2288af74f91b9
+2019-01-12 17:59:00 INFO  DB:41 - DbDetails jdbc:mysql://172.104.42.120/playwinf_sportz11,playwinf_sportz,i{+W8e4&AfOs
+2019-01-12 17:59:02 INFO  DB:44 - Database Connection Established!
+2019-01-12 17:59:10 INFO  PlayWinUI:37 - Launching Application
+2019-01-12 17:59:35 ERROR PlayWinUI:48 - Exception Occured while launching application! Message: Expected condition failed: waiting for title to be "PlaywinFantasy Cricket | Play Real Fantasy Cricket | Play Fantasy Kabaddi | Play Fantasy Football ". Current title: "PlaywinFantasy Cricket | Play Real Fantasy Cricket | Play Fantasy Kabaddi | Play Fantasy Football" (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'WOI-LT-171', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\SHVAIS~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61767}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: cd938547e97671cdfd76d81cfa5d42e6
+2019-01-12 18:02:24 INFO  PlayWinUI:37 - Launching Application
+2019-01-12 18:02:32 INFO  PlayWinUI:43 - Login Successful
+2019-01-12 18:02:52 ERROR PlayWinUI:48 - Exception Occured while launching application! Message: Expected condition failed: waiting for text ('Add Money') to be present in element found by By.tagName: a (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'WOI-LT-171', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\SHVAIS~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:62532}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 5b49609e2b4e0fff8bdc6edd862e403e
+2019-01-12 18:17:11 INFO  PlayWinUI:37 - Launching Application
+2019-01-12 18:17:19 INFO  PlayWinUI:43 - Login Successful
+2019-01-12 18:17:39 ERROR PlayWinUI:48 - Exception Occured while launching application! Message: Expected condition failed: waiting for text ('Add Money') to be present in element found by By.tagName: a (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'WOI-LT-171', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\SHVAIS~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50329}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 79a72ee11da02845491d4fd217a9bafe
+2019-01-12 18:20:19 INFO  PlayWinUI:37 - Launching Application
+2019-01-12 18:20:47 ERROR PlayWinUI:48 - Exception Occured while launching application! Message: Expected condition failed: waiting for title to be "Cricket | Play Real Fantasy Cricket | Play Fantasy Kabaddi | Play Fantasy Football". Current title: "PlaywinFantasy Cricket | Play Real Fantasy Cricket | Play Fantasy Kabaddi | Play Fantasy Football" (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'WOI-LT-171', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\SHVAIS~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51836}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 3a6e9b44c980b31a620c5db4383ede7f
+2019-01-12 18:22:46 INFO  PlayWinUI:37 - Launching Application
+2019-01-12 18:23:13 ERROR PlayWinUI:48 - Exception Occured while launching application! Message: Expected condition failed: waiting for title to be "PlaywinFantasy Cricket | Play Real Fantasy Cricket | Play Fantasy Kabaddi | Play Fantasy Football ". Current title: "PlaywinFantasy Cricket | Play Real Fantasy Cricket | Play Fantasy Kabaddi | Play Fantasy Football" (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'WOI-LT-171', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\SHVAIS~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52695}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 921c06baa42d983f240a64aec9f92054
+2019-01-12 18:24:54 INFO  PlayWinUI:37 - Launching Application
+2019-01-12 18:25:02 INFO  PlayWinUI:43 - Login Successful
+2019-01-12 18:25:23 ERROR PlayWinUI:48 - Exception Occured while launching application! Message: Expected condition failed: waiting for text ('Add Money') to be present in element found by By.tagName: a (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'WOI-LT-171', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\SHVAIS~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53267}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 86041d848c7801a5d0ab190a9b93124e
+2019-01-15 15:58:57 INFO  PlayWinUI:38 - Launching Application
+2019-01-15 15:58:57 ERROR PlayWinUI:49 - Exception Occured while launching application! Message: null value in entry: url=null
+2019-01-15 16:10:35 INFO  PlayWinUI:38 - Launching Application
+2019-01-15 16:10:46 INFO  PlayWinUI:44 - Login Successful
+2019-01-15 16:11:06 ERROR PlayWinUI:49 - Exception Occured while launching application! Message: Expected condition failed: waiting for text ('Add Money') to be present in element found by By.tagName: a (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'WOI-LT-171', ip: '10.3.36.194', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\SHVAIS~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:54061}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 77969619637df27757d1b5a9120ee19d
+2019-01-15 16:11:45 INFO  DB:39 - DbDetails jdbc:mysql://172.104.42.120/playwinf_sportz11,playwinf_sportz,i{+W8e4&AfOs
+2019-01-15 16:11:46 INFO  DB:42 - Database Connection Established!
+2019-02-15 11:48:42 INFO  DB:39 - DbDetails jdbc:mysql://172.104.42.120/playwinf_sportz11,playwinf_sportz,i{+W8e4&AfOs
+2019-02-15 11:48:43 INFO  DB:42 - Database Connection Established!
+2019-02-15 15:59:53 INFO  PlayWinUI:40 - Launching Application
+2019-02-15 16:00:02 INFO  PlayWinUI:48 - Login Successful
+2019-02-15 16:00:11 INFO  PlayWinUI:51 - "User options" drop down fail to load
+2019-02-15 16:00:11 INFO  PlayWinUI:62 - "User options" drop down fail to load
+2019-02-15 16:35:41 INFO  PlayWinUI:79 - Launching Application
+2019-02-15 16:36:24 ERROR PlayWinUI:92 - Exception Occured while login: Expected condition failed: waiting for visibility of element located by By.xpath: //ul[@class="hdr_profile hdr_profile1"]//a[@class="dropdown-toggle ng-binding"] (tried for 30 second(s) with 500 milliseconds interval)
+2019-02-15 16:36:28 INFO  PlayWinUI:39 - Launching Application
+2019-02-15 16:36:37 INFO  PlayWinUI:48 - Login Successful
+2019-02-15 16:36:55 INFO  PlayWinUI:39 - Launching Application
+2019-02-15 16:37:16 ERROR PlayWinUI:70 - Exception Occured while login: timeout
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'WOI-LT-171', ip: '10.3.36.194', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\SHVAIS~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:63056}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 7c55d9db44564e0827fa56365ae10b3a
+*** Element info: {Using=xpath, value=//input[@aria-label="Email or phone"]}
+2019-02-15 16:39:04 INFO  PlayWinUI:79 - Launching Application
+2019-02-15 16:39:16 INFO  PlayWinUI:39 - Launching Application
+2019-02-15 16:39:28 INFO  PlayWinUI:48 - Login Successful
+2019-02-15 16:39:50 ERROR PlayWinUI:105 - Exception Occured while logout! Message: timeout
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'WOI-LT-171', ip: '10.3.36.194', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\SHVAIS~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:64253}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: fba61bfbaeedd5724a7a7a8f8aabbdba
+2019-02-15 16:39:53 INFO  PlayWinUI:39 - Launching Application
+2019-02-15 16:40:35 ERROR PlayWinUI:70 - Exception Occured while login: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@aria-label="Email or phone"] (tried for 30 second(s) with 500 milliseconds interval)
+2019-02-15 16:41:17 INFO  PlayWinUI:79 - Launching Application
+2019-02-15 16:41:32 INFO  PlayWinUI:39 - Launching Application
+2019-02-15 16:41:40 INFO  PlayWinUI:48 - Login Successful
+2019-02-15 16:41:57 INFO  PlayWinUI:39 - Launching Application
+2019-02-15 18:22:04 INFO  PlayWinUI:68 - Launching Application
+2019-02-15 18:22:16 INFO  PlayWinUI:77 - Login Successful
+2019-02-15 18:23:00 INFO  PlayWinUI:143 - Closing Browser
+2019-02-15 18:27:09 INFO  PlayWinUI:68 - Launching Application
+2019-02-15 18:27:19 INFO  PlayWinUI:77 - Login Successful
+2019-02-15 18:27:33 INFO  PlayWinUI:143 - Closing Browser
+2019-02-15 18:59:48 INFO  PlayWinUI:70 - Launching Application
+2019-02-15 18:59:58 ERROR PlayWinUI:101 - Exception Occured while login: timeout
+  (Session info: chrome=72.0.3626.109)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'WOI-LT-171', ip: '10.3.36.194', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\SHVAIS~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51297}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 72.0.3626.109, webStorageEnabled: true}
+Session ID: 61aed111d06b5ba6d91a9c06d5c8e1b8
+2019-02-15 18:59:58 INFO  PlayWinUI:145 - Closing Browser
+2019-02-15 19:00:50 INFO  PlayWinUI:70 - Launching Application
+2019-02-15 19:00:59 INFO  PlayWinUI:79 - Login Successful
+2019-02-15 19:01:47 INFO  PlayWinUI:145 - Closing Browser
+2019-02-15 19:03:46 INFO  PlayWinUI:70 - Launching Application
+2019-02-15 19:03:54 INFO  PlayWinUI:79 - Login Successful
+2019-02-15 19:05:30 INFO  PlayWinUI:145 - Closing Browser
+2019-02-15 19:09:17 INFO  PlayWinUI:70 - Launching Application
+2019-02-15 19:09:26 INFO  PlayWinUI:79 - Login Successful
+2019-02-15 19:09:35 INFO  PlayWinUI:145 - Closing Browser
+2019-02-15 19:12:36 INFO  PlayWinUI:70 - Launching Application
+2019-02-15 19:12:45 INFO  PlayWinUI:79 - Login Successful
+2019-02-15 19:12:56 INFO  PlayWinUI:145 - Closing Browser
+2019-02-15 19:16:48 INFO  PlayWinUI:70 - Launching Application
+2019-02-15 19:16:59 INFO  PlayWinUI:79 - Login Successful
+2019-02-15 19:18:16 INFO  PlayWinUI:145 - Closing Browser
+2019-02-15 19:33:44 INFO  PlayWinUI:74 - Launching Application
+2019-02-15 19:33:54 INFO  PlayWinUI:83 - Login Successful
+2019-02-15 19:35:16 INFO  PlayWinUI:74 - Launching Application
+2019-02-15 19:35:25 INFO  PlayWinUI:83 - Login Successful
+2019-02-15 19:36:41 INFO  PlayWinUI:149 - Closing Browser
+2019-02-15 19:38:06 INFO  PlayWinUI:75 - Launching Application
+2019-02-15 19:38:15 INFO  PlayWinUI:84 - Login Successful
+2019-02-15 19:39:26 INFO  PlayWinUI:150 - Closing Browser
+2019-02-15 19:45:31 INFO  PlayWinUI:75 - Launching Application
+2019-02-15 19:45:41 INFO  PlayWinUI:84 - Login Successful
+2019-02-15 19:45:49 INFO  PlayWinUI:150 - Closing Browser
+2019-02-15 19:46:19 INFO  PlayWinUI:75 - Launching Application
+2019-02-15 19:46:28 INFO  PlayWinUI:84 - Login Successful
+2019-02-15 19:46:51 INFO  PlayWinUI:150 - Closing Browser
+2019-02-15 19:47:07 INFO  PlayWinUI:75 - Launching Application
+2019-02-15 19:47:18 INFO  PlayWinUI:84 - Login Successful
+2019-02-15 19:47:51 INFO  PlayWinUI:150 - Closing Browser
+2019-02-15 19:49:43 INFO  PlayWinUI:75 - Launching Application
+2019-02-15 19:49:52 INFO  PlayWinUI:84 - Login Successful
+2019-02-15 19:51:24 INFO  PlayWinUI:75 - Launching Application
+2019-02-15 19:51:32 INFO  PlayWinUI:84 - Login Successful
+2019-02-15 19:53:07 INFO  PlayWinUI:150 - Closing Browser
+2019-02-15 19:53:54 INFO  PlayWinUI:75 - Launching Application
+2019-02-15 19:54:04 INFO  PlayWinUI:84 - Login Successful
+2019-02-15 19:54:21 INFO  PlayWinUI:150 - Closing Browser
