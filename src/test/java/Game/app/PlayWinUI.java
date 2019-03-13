@@ -37,7 +37,7 @@ public class PlayWinUI {
     }
 
     public void joinContest(String UIMatchName, int WK, int batsMan, int bowler, int allRounder) {
-        webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[text()=\""+UIMatchName+"\"]/../..//parent::div//button[@class=\"join_btn matchbtn ng-scope\"]"))).click();
+        webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[text()=\"" + UIMatchName + "\"]/../..//parent::div//button[@class=\"join_btn matchbtn ng-scope\"]"))).click();
         webDriverWait.until(ExpectedConditions.presenceOfElementLocated(UiLocators.ContestJoin));
         webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(UiLocators.ContestJoin)).click();
         webDriverWait.until(ExpectedConditions.presenceOfElementLocated(UiLocators.CreateTeamPopUp));
@@ -47,9 +47,9 @@ public class PlayWinUI {
         webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[contains(text(),\"WK\")]"))).click();
 
         for (int i = 1; i <= WK; i++) {
-            webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//table[@class=\"table-fixed\"]//tr[@ng-if=\"player.play_role=='WICKETKEEPER'\"]/td/a)[" + i + "]"))).click();
+            webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//table[@class=\"table table-fixed\"]//tr[@ng-if=\"player.play_role=='WICKETKEEPER'\"]/td/a)[" + i + "]"))).click();
         }
-        webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//table[@class=\"table-fixed\"]//tr[@ng-if=\"player.play_role=='WICKETKEEPER'\" and @class=\"active\"]//td/a")));
+        webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//table[@class=\"table table-fixed\"]//tr[@ng-if=\"player.play_role=='WICKETKEEPER'\" and @class=\"active\"]//td/a")));
         webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[contains(text(),\"Batsmen\")]"))).click();
         for (int i = 1; i <= batsMan; i++) {
             webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//table[@class=\"table-fixed\"]//tr[@ng-if=\"player.play_role=='BATSMAN'\"]/td/a)[" + i + "]"))).click();
@@ -65,6 +65,12 @@ public class PlayWinUI {
             webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//table[@class=\"table-fixed\"]//tr[@ng-if=\"player.play_role=='BOWLER'\"]//td/a)[" + i + "]"))).click();
         }
         webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//table[@class=\"table-fixed\"]//tr[@ng-if=\"player.play_role=='BOWLER'\" and @class=\"active\"]//td/a")));
+
+        //Check Team pop up
+        webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class=\"modal-body clearfix select_captain\"]//button[contains(text(),\"CREATE TEAM\")]")));
+        driver.findElement(By.xpath("//div[@class=\"modal-dialog custom_popup\"]//input[@ng-model=\"team_name\"]")).sendKeys("Test1");
+
+
 
 
     }
@@ -98,8 +104,9 @@ public class PlayWinUI {
                 // Switch back to original browser (first window)
                 driver.switchTo().window(winHandleBefore);
             }
-            webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(UiLocators.UserOption));
-
+            //webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(UiLocators.UserOption));
+            //span[@class="rgtoggle"]
+            webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@class=\"rgtoggle\"]")));
         } catch (Exception e) {
             e.printStackTrace();
             log.error("Exception Occured while login: " + e.getLocalizedMessage());

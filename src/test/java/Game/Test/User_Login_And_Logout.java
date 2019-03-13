@@ -3,22 +3,26 @@ package Game.Test;
 import Game.app.DB;
 import Game.app.PlayWinUI;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
 
 /**
  * Created by vash7003 on 1/5/2019.
  */
 public class User_Login_And_Logout {
-    DB obj;
+    DB dataBase;
     PlayWinUI uiObj;
+
+    @BeforeClass
+    public void before() {
+        dataBase = new DB();
+
+    }
+
 
     @AfterMethod
     public void afterTestCase() {
-        uiObj.closeApp();
+        //uiObj.closeApp();
     }
 
 
@@ -47,25 +51,23 @@ public class User_Login_And_Logout {
     public void test4() {
         uiObj = new PlayWinUI();
         uiObj.login(true);
-        uiObj.joinContest("NZ VS BAN",1,4,4,2);
+        uiObj.joinContest("MAH VS KAR", 1, 4, 4, 2);
         //uiObj.logout();
     }
 
-@Test(description="Date Formater")
-public void test5()
-{
-    String query ="SELECT match_date,match_time,match_num,localteam_id,localteam,visitorteam_id,visitorteam,s.name AS 'Series Name' FROM matches m,series s WHERE sid=series_id AND m.play_status=b'1' AND STATUS='open' AND match_date BETWEEN '"+dateFormatter(1)+"' AND '"+dateFormatter(3)+"' ORDER BY match_date;";
+    @Test(description = "Date Formater")
+    public void test5() {
+        System.out.println(DB.SeriesName + DB.LocalTeam +DB.VisitorTeam+DB.MatchDate+DB.MatchNum);
+        //test();
+    }
 
-    System.out.println("Modified query "+query);
+public void test()
+{
+    String a[]={"1","3","5"};
+    String b[]=new String[]{"1","3","5"};
+    System.out.println(b[2]);
 }
 
-    public String dateFormatter(int increaseDay)
-    {
-        Calendar c = Calendar.getInstance();
-        c.add(Calendar.DATE, increaseDay);
-        Date date =c.getTime();
-        SimpleDateFormat formatter= new SimpleDateFormat("yyyy-MM-dd");
-      return formatter.format(date);
 
-    }
+
 }
