@@ -5,10 +5,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
 
 /**
  * Created by vash7003 on 1/5/2019.
@@ -89,6 +86,22 @@ public class DB {
             Object[] obj = {true, team_short_name};
             return obj;
         }
+    }
+
+    public int getAssignedContestid(String contestName)
+    { int contestId=0;
+        String query="SELECT contest_id FROM contest_matches cm,contest c WHERE cm.contest_id=c.id AND contest_name ='"+ contestName + "'";
+        try {
+            Statement stmt = connection.createStatement();
+            ResultSet rs = stmt.executeQuery(query);
+
+            while (rs.next()) {
+                contestId = rs.getInt("contest_id");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return contestId;
     }
 
     public void testData() {

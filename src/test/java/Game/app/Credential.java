@@ -22,7 +22,7 @@ public class Credential {
     public final static String adminId = properties.getProperty("adminId");
     public final static String adminpwd = properties.getProperty("adminpwd");
     public final static String uiurl = properties.getProperty("uiurl");
-
+    public final static String adminUrl = properties.getProperty("adminurl");
 
     private static Properties getData() {
         Properties properties = null;
@@ -65,6 +65,10 @@ public class Credential {
 
     public static String getUiurl() {
         return uiurl+"#/login";
+    }
+
+    public static String getAdminUrl() {
+        return adminUrl+"/login";
     }
 
     public static String getServer() {

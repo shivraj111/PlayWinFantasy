@@ -49,9 +49,10 @@ public class User_Login_And_Logout {
 
     @Test(description = "4. Join Public Contest")
     public void test4() {
+        DB dbObj= new DB();
         uiObj = new PlayWinUI();
         uiObj.login(true);
-        uiObj.joinContest("MAH VS KAR", 1, 4, 4, 2);
+        uiObj.joinContest("SA VS SL","t20-1st T20I" , dbObj.getAssignedContestid("AutomatedContest019"),"Test019",1, 4, 4, 2);
         //uiObj.logout();
     }
 

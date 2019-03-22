@@ -3,10 +3,12 @@ package Game.app;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
@@ -33,13 +35,18 @@ public class PlayWinUI {
         driver.manage().window().maximize();
         webDriverWait = new WebDriverWait(driver, 60);
         driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS); //Page Load Timeout Set
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
     }
 
-    public void joinContest(String UIMatchName, int WK, int batsMan, int bowler, int allRounder) {
-        webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[text()=\"" + UIMatchName + "\"]/../..//parent::div//button[@class=\"join_btn matchbtn ng-scope\"]"))).click();
-        webDriverWait.until(ExpectedConditions.presenceOfElementLocated(UiLocators.ContestJoin));
-        webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(UiLocators.ContestJoin)).click();
+    public void joinContest(String UIMatchName, String matchtype, int contestId, String teamName, int WK, int batsMan, int bowler, int allRounder) {
+
+        ((JavascriptExecutor) driver)
+                .executeScript("window.scrollTo(0, document.body.scrollHeight)");
+
+        webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[text()=\"" + UIMatchName + "\"]/../..//parent::div//h4[text()=\"" + matchtype + "\"]/../..//parent::div//button[@class=\"join_btn matchbtn ng-scope\"]"))).click();
+        webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//p[contains(text(),'" + contestId + "')]/../..//parent::div//button[@class=\"btn btn-submit ng-scope\" and text()=\"Join\"]"))).click();
+        // webDriverWait.until(ExpectedConditions.presenceOfElementLocated(UiLocators.ContestJoin));
+        //webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(UiLocators.ContestJoin)).click();
         webDriverWait.until(ExpectedConditions.presenceOfElementLocated(UiLocators.CreateTeamPopUp));
         webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(UiLocators.CreateTeamPopUp)).click();
         webDriverWait.until(ExpectedConditions.presenceOfElementLocated(UiLocators.PlayerSelectionPage));
@@ -68,11 +75,82 @@ public class PlayWinUI {
 
         //Check Team pop up
         webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class=\"modal-body clearfix select_captain\"]//button[contains(text(),\"CREATE TEAM\")]")));
-        driver.findElement(By.xpath("//div[@class=\"modal-dialog custom_popup\"]//input[@ng-model=\"team_name\"]")).sendKeys("Test1");
+        driver.findElement(By.xpath("//div[@class=\"modal-dialog custom_popup\"]//input[@ng-model=\"team_name\"]")).sendKeys("" + teamName + "");
+        Select selCaptain = new Select(driver.findElement(By.xpath("//div[@class=\"modal-dialog custom_popup\"]//select[@name=\"captain\"]")));
+        Select selViceCaptain = new Select(driver.findElement(By.xpath("//div[@class=\"modal-dialog custom_popup\"]//select[@name=\"viceCaptain\"]")));
+        selCaptain.selectByIndex(1);
+        selViceCaptain.selectByIndex(1);
+        //Click on Create Team
+        webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id=\"selectCaptain\" and @class=\"modal fade in\"]//button[@ng-click=\"saveTeam()\" and contains(text(),\"CREATE TEAM\")]"))).click();
+
+        //Click on Confirmation
+        webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id=\"normal_contest\" and @class=\"modal fade ng-scope in\"]//button[@ng-click=\"close_join_popup('normal_contest')\" and contains(text(),\"Join\")]"))).click();
+
+        //Click on Final Confirmation
+        webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id=\"selectTeamChips\" and @class=\"modal fade in\"]//button[contains(text(),\"JOIN CONTEST\")]"))).click();
+
+        //Click on Successfully jointed Messge
+        webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id=\"suss_msg\" and @class=\"modal fade in\"]//div[@class=\"modal-content\"]//button[@class=\"close\"]"))).click();
+//done
+        /*//Click on  Join button
+        //webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[text()=\""+UIMatchName+"\"]/../..//parent::div//button[@class=\"join_btn ng-scope\"]"))).click();
+        webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[text()=\"" + UIMatchName + "\"]/../..//parent::div//h4[text()="+matchtype+ "]/../..//parent::div//button[@class=\"join_btn matchbtn ng-scope\"]"))).click();
+        //Contest selection page  to load
+        webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@class=\"btn btn-submit ng-scope\" and text()=\"Join\"]")));
+*/
+
+    }
+
+    public void adminLogin() {
+        log.info("Launching Application");
+        driver.get(Credential.getAdminUrl());
+        driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS); //Page Load Timeout Set
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS); //Set 5 Seconds for all UI objects
+        webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='app-cross']//div[@class='submit']")));
+        webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.name("identity"))).sendKeys(Credential.getAdminId());
+        webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.name("password"))).sendKeys(Credential.getAdminpwd());
+        webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.name("password"))).submit();
+        //webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.name("password"))).sendKeys(Keys.ENTER);
+        //driver.findElement(By.xpath("//div[@class='app-cross']//div[@class='submit']")).click();
+        //webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@type='submit']"))).click();
+        log.info("Login Successful");
+        //driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS); //Page Load Timeout Set
+        //webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='Users']")));
+        webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//nav[@class='navbar-default navbar-static-side']//span[text()='Users']"))).click();
+        webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//nav[@class='navbar-default navbar-static-side']//span[text()='Users Detail']"))).click();
 
 
+    }
 
+    public void addCash(String userName, String amount) {
+        try {
+            driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+            webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='ibox float-e-margins']")));
+            webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='ibox float-e-margins']//input[@type='search']"))).sendKeys(userName);
+            Thread.sleep(2000);
+            //webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//table[@aria-describedby='users_info']//td[text()='"+userName+"']/../..//parent::div//button[text()='View All ']")));
+            //webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//table[@aria-describedby='users_info']//td[text()='" + userName + "']/../..//parent::div//button[text()='View All ']")));
+            webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//table[@aria-describedby='users_info']//td[text()='" + userName + "']/../..//parent::div//button[text()='View All ']"))).click();
+            Thread.sleep(2000);
+            webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='dropdown open']")));
+            //if(driver.findElement(By.xpath("//div[@class='dropdown open']//a[text()='Add Cash']"))==)
+            /*if(driver.findElements(By.xpath("//div[@class='dropdown open']//a[text()='Add Cash']")).size()!=1)
+            {
+                driver.findElement(By.xpath("//table[@aria-describedby='users_info']//td[text()='" + userName + "']/../..//parent::div//button[text()='View All ']")).click();
+                webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='dropdown open']//a[text()='Add Cash']"))).click();
+            }*/
+            Thread.sleep(2000);
+            webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='dropdown open']//a[text()='Add Cash']"))).click();
+            Thread.sleep(2000);
+            webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//form[@id='addFormAjax']//input[@name='add_cash']"))).sendKeys(amount);
+            webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//form[@id='addFormAjax']//textarea[@name='message']"))).sendKeys("AutomatedTest");
+            webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//form[@id='addFormAjax']//button[@id='submit']"))).click();
+            webDriverWait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//form[@id='addFormAjax']//button[@id='submit']")));
 
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     public void login(Boolean UserID) {
