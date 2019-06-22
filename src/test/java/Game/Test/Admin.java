@@ -36,8 +36,14 @@ public class Admin {
         }*/
         uiObj = new PlayWinUI();
         uiObj.adminLogin();
-        for(int i=90;i<=99;i++) {
-            uiObj.addCash("test"+i+"@gmail.com", "1000");
+        //for(int i=501;i<=1199;i++) {
+        //Adding cash to only one player.
+            for(int i=501;i<=1199;i++) {
+            Boolean flag=uiObj.addCash("test"+i+"@gmail.com", "1000");
+            if(flag==false)
+                continue;
+            else
+            System.out.println("Successfully added cash for user: test"+i );
 
         }
     }
